@@ -3,6 +3,10 @@
 
 
 # Except these
-!.config
+!.config/nvim
 
 !.tmux.conf
+
+!.bash_aliases
+
+.wezterm.lua

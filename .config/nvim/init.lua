@@ -1,1 +1,2 @@
-require("luytbq.remap")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
