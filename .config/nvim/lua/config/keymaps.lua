@@ -13,5 +13,9 @@ map({"v"}, "p", "pgvy")
 -- Terminal Mappings
 -- del({"n", "t"}, "<c-/>")
 -- del({"n", "t"}, "<c-_>") -- <c-/> is translated to <c-_> in some terminal
-map("n", "<c-`>",      function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
-map("t", "<c-`>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+-- map("n", "<c-`>", function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
+-- map("t", "<c-`>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+map("n", "gtt", function()
+  vim.notify('hello')
+  Snacks.terminal()
+  end)
