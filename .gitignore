@@ -4,6 +4,7 @@
 
 # Except these
 !.config/nvim
+!.config/nvim/*
 
 !.tmux.conf
 

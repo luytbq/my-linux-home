@@ -2,7 +2,7 @@
 
 -- Currenty not working, can't findout why yet
 
-return nil
+if true then return {} end
 
 -- return {
 --   "hrsh7th/nvim-cmp",
