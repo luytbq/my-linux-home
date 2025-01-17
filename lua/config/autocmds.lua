@@ -9,11 +9,10 @@
 
 -- disable auto format
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "lua", "java"},
+  pattern = { "java", "ts", "js", "lua" },
   callback = function()
     vim.b.autoformat = false
   end,
 })
-
 
 vim.opt_local.wrap = true

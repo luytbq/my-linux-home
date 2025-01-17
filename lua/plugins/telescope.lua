@@ -1,6 +1,11 @@
+local map = vim.keymap.set
+
 return {
   "nvim-telescope/telescope.nvim",
 
-  -- Ctrl+i to show current buffers
-  vim.keymap.set({"n"}, "<c-m>", "<cmd>Telescope buffers sort_mru=true sort_lastused=true ignore_current_buffer=true<cr>")
+  -- ff, fg were handled by lazyvim
+  map('n', '<leader>fi', "<cmd>Telescope live_grep<cr>", { desc = 'Telescope live grep' }),
+  map('n', '<leader>fs', "<cmd>Telescope resume<cr>", { desc = 'Telescope resume' }),
+  map('n', '<leader>fb', "<cmd>Telescope buffers<cr>", { desc = 'Telescope buffers' }),
+  map('n', '<leader>fh', "<cmd>Telescope help_tags<cr>", { desc = 'Telescope help tags' }),
 }
