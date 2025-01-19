@@ -25,6 +25,13 @@ return {
           harpoon.ui:toggle_quick_menu(harpoon:list())
         end,
         desc = "Harpoon Quick Menu",
+      },
+      { "<C-c>",
+        function ()
+          local harpoon = require("harpoon")
+          harpoon.ui:close_menu()
+        end,
+        desc = "Close Harpoon Quick Menu",
       }
     }
 
