@@ -3,7 +3,7 @@ return {
   keys = {
     { "<leader>dv", group = "Diff view" },
     { "<leader>dvo", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open", mode = "n" },
-    { "<leader>dvw", "<cmd>DiffviewOpen HEAD %<cr>", desc = "Diffview Open current file change", mode = "n" },
+    { "<leader>dvw", "<cmd>DiffviewOpen -- %<cr>", desc = "Diffview Open current file change", mode = "n" },
     { "<leader>dvc", "<cmd>DiffviewClose<cr>", desc = "Diffview Close", mode = "n" },
     { "<leader>dvf", "<cmd>DiffviewFileHistory<cr>", desc = "Diffview File History", mode = "n" },
     { "<leader>dvr", "<cmd>DiffviewRefresh<cr>", desc = "Diffview Refresh", mode = "n" },
