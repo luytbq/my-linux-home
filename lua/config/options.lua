@@ -5,5 +5,8 @@
 local opt = vim.opt
 
 opt.smoothscroll = false
+opt.wrap = false
 
-
+vim.opt_local.wrap = true
+vim.b.autoformat = false
+vim.g.autoformat = false
