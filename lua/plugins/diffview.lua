@@ -1,5 +1,15 @@
 return {
   "sindrets/diffview.nvim",
+  
+  opts = {
+    -- change merge_tool's layout
+    view = {
+      x = {
+        layout = "diff4_horizontal",
+      },
+    },
+  },
+
   keys = {
     { "<leader>dv", group = "Diff view" },
     { "<leader>dvo", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open", mode = "n" },
